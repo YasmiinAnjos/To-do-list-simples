@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lista de Tarefas</title>
+  <link href="stiles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+    <h1>Lista de Tarefas</h1>
+    <div class="task-input">
+      <input type="text" id="new-task" placeholder="Digite uma nova tarefa">
+      <button onclick="addTask()">Adicionar</button>
+    </div>
+    <div class="filters">
+      <button onclick="filterTasks('all')">Todas</button>
+      <button onclick="filterTasks('pending')">Pendentes</button>
+      <button onclick="filterTasks('completed')">Concluídas</button>
+    </div>
+    <ul id="task-list" class="task-list"></ul>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
